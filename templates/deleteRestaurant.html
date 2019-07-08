@@ -1,0 +1,7 @@
+<h1>Tem certeza que deseja deletar o restaurante {{restaurant.name}}?</h1>
+<form action="{{url_for('deleteRestaurant', restaurant_id=restaurant.id)}}" method="POST">
+	<input type='submit' value='SIM'>
+</form>
+
+<br/>
+<p><a href="{{url_for('Home')}}">Não, voltar para home</a></p>
